@@ -8,6 +8,7 @@ function CadastroModal ({ setOpen}) {
         <div className=" border-bege rounded-lg bg-offwhite w-180 p-5 flex flex-col items-center">
             <button onClick={() => {setOpen(false)}} className="flex justify-end w-full cursor-pointer"><IoClose className="text-3xl text-marromEscuro" /></button>
             < Input label="Email" type="email" placeholder="seuemail@exemplo.com.br" />
+            < Input label="Nome de usuário" type="text" placeholder="Amanda Moniele" />
             < Input label="Senha" type="password" placeholder="......." />
             < BotaoMaior text='Criar conta' />
         </div>
