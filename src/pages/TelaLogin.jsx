@@ -1,6 +1,6 @@
-import BotaoMaior from "./Components/BotaoMaior"
-import CadastroModal from "./Components/CadastroModal"
-import Input from "./Components/Input"
+import BotaoMaior from "../Components/BotaoMaior"
+import CadastroModal from "../Components/CadastroModal"
+import Input from "../Components/Input"
 import { useState } from "react"
 
 

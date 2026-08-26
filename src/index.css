@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 #root {
-  background-color: #F1ECE6;
   height: 100vh;
 }
 
 @theme {
   --color-marromEscuro: #70462D;
-  --color-offwhite: #F8F7F5;
+  --color-offwhite: white;
   --color-bege: #E5DED7;
   --color-marrom: #8B6A52;
+  --color-marromClaro: #F1ECE6;
+  --color-pretoClaro: #2F2F2F;
 }
