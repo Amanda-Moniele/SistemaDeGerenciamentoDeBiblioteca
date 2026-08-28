@@ -1,5 +1,7 @@
 import TelaLogin from "./pages/TelaLogin"
 import AdministradorTela from "./pages/AdministradorTela"
+import AdicionarLivro from "./pages/AdicionarLivro"
+import Sidebar from "./Components/Sidebar"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -13,6 +15,11 @@ function App() {
           <Route
             path="/administrador"
             element={<AdministradorTela />}
+          />
+
+            <Route
+            path="/AdicionarLivro"
+            element={<AdicionarLivro />}
           />
         </Routes>
     </BrowserRouter>
