@@ -1,15 +1,13 @@
-import LogoSidebar from "../Components/LogoSidebar"
-import SidebarButton from "../Components/SidebarButton"
 import LogoutButton from "../Components/LogoutButton";
 import Dashboard from "../Components/Dashboard";
 import Cards from "../Components/Cards";
-import { FaBookOpen, FaBookMedical, FaUser, FaHome } from "react-icons/fa";
+import Sidebar from "../Components/Sidebar";
 import { LuBookCheck, LuBookPlus, LuBookX, LuBookText } from "react-icons/lu";
 
 function AdministradorTela() {
     return (
         <div className="bg-offwhite w-full min-h-screen flex">
-
+            < Sidebar />
             <div className="w-full">
                 <div className="w-full">
                     < Dashboard />

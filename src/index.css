@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @theme {
   --color-marromEscuro: #70462D;
   --color-offwhite: white;

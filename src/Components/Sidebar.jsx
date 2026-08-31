@@ -1,6 +1,11 @@
+import LogoSidebar from "./LogoSidebar"
+import SidebarButton from "./SidebarButton"
+import { FaBookOpen, FaBookMedical, FaUser, FaHome } from "react-icons/fa";
+
 function Sidebar() {
-    <div>
-        <div className="bg-marromClaro w-86 h-screen">
+  return (
+      <div>
+        <div className="bg-marromClaro w-75 h-screen">
             <div className="p-5">
                 < LogoSidebar />
             </div>
@@ -28,6 +33,7 @@ function Sidebar() {
             </div>
         </div>
     </div>
+  )
 }
 
 export default Sidebar
