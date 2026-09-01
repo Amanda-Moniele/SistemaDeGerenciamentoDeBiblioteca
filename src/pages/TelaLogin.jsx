@@ -9,7 +9,7 @@ function TelaLogin() {
     return (
         <div>
             <div className="flex items-center flex-col">
-                <img src="src/assets/gatoLogo.jpg" alt="" className="h-60 w-60 rounded-full" />
+                <img src="src/assets/gatoLogo.jpg" alt="" className="h-60 w-60 rounded-full mt-10" />
                 <p className="text-marrom mb-5 mt-5 font-bold text-3xl">Biblioteca</p>
                 <h1 className="text-marrom mb-5 text-lg font-semibold">Sistema de Gerenciamento</h1>
             </div>
