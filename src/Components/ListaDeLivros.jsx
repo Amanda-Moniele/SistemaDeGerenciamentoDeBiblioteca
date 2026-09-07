@@ -1,12 +1,23 @@
-import LivroEncontrado from "../Components/LivroEncontrado"
+import LivroEncontrado from "./LivroEncontrado"
 
-function ListaDeLivros() {
+function ListaDeLivros({ livros }) {
     return (
-        <div>
+        <div className="mt-5 overflow-auto">
             <div className="flex flex-col gap-3">
-                <p className="text-lg pb-3 pt-5">Resultados encontrados</p>
 
-                < LivroEncontrado src="/src/assets/1984.jpg" titulo="1984" autor="George Orwell" />
+                {livros.map((livro) => (
+                    <LivroEncontrado
+                        key={livro.key}
+                        titulo={livro.title}
+                        autor={livro.author_name?.[0]}
+                        src={
+                            livro.cover_i
+                                ? `https://covers.openlibrary.org/b/id/${livro.cover_i}-M.jpg`
+                                : "/sem-capa.jpg"
+                        }
+                    />
+                ))}
+
             </div>
         </div>
     )
