@@ -6,6 +6,10 @@ function BuscarLivro ({buscar}) {
 
     const [titulo, setTitulo] = useState("")
 
+    function handleBuscar() {
+        buscar(titulo)
+    }
+
      return (
         <div>
             <div>
@@ -23,7 +27,7 @@ function BuscarLivro ({buscar}) {
                     <input value={titulo} onChange={(e) => {setTitulo(e.target.value)}} type="text" placeholder="Digite o título" className="text-lg outline-none pl-3" />
                 </div>
 
-                <button onClick={() => buscar(titulo)} className="flex items-center gap-1 text-lg bg-marromEscuro text-white h-10 w-30 rounded-lg ml-5 cursor-pointer pl-2">
+                <button onClick={handleBuscar} className="flex items-center gap-1 text-lg bg-marromEscuro text-white h-10 w-30 rounded-lg ml-5 cursor-pointer pl-2">
                     < IoIosSearch className="text-2xl" />
                     Buscar
                 </button>

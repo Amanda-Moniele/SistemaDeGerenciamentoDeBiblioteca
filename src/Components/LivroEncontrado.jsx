@@ -1,4 +1,4 @@
-function LivroEncontrado({titulo, autor, src}) {
+function LivroEncontrado({livro, titulo, autor, src, selecionarLivro}) {
     return (
         <div className="flex justify-between items-center border border-bege p-5 rounded-lg hover:border-marrom hover:bg-marromClaro">
             <div className="flex">
@@ -10,7 +10,7 @@ function LivroEncontrado({titulo, autor, src}) {
             </div>
 
             <div>
-                <button className="bg-marromEscuro h-12 w-40 rounded-lg text-white p-2 text-lg cursor-pointer">Selecionar</button>
+                <button onClick={() => selecionarLivro(livro)} className="bg-marromEscuro h-12 w-40 rounded-lg text-white p-2 text-lg cursor-pointer">Selecionar</button>
             </div>
         </div>
     )
