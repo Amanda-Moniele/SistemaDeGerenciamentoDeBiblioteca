@@ -2,28 +2,34 @@ import TelaLogin from "./pages/TelaLogin"
 import AdministradorTela from "./pages/AdministradorTela"
 import AdicionarLivro from "./pages/AdicionarLivro"
 import Sidebar from "./Components/Sidebar"
+import Emprestimo from "./pages/Emprestimo"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center h-full w-full">
       <BrowserRouter>
         <Routes>
-          <Route path="/" 
-          element={<TelaLogin />} />
+          <Route path="/"
+            element={<TelaLogin />} />
 
           <Route
             path="/administrador"
             element={<AdministradorTela />}
           />
 
-            <Route
+          <Route
             path="/AdicionarLivro"
             element={<AdicionarLivro />}
           />
+
+          <Route
+            path="/emprestimo"
+            element={< Emprestimo />}
+          />
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
   )
 }
