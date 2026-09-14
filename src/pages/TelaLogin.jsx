@@ -5,7 +5,11 @@ import { useState } from "react"
 
 
 function TelaLogin() {
+
     const [open, setOpen] = useState(false);
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+
     return (
         <div>
             <div className="flex items-center flex-col">
@@ -16,8 +20,8 @@ function TelaLogin() {
 
             <div className="bg-offwhite w-180 p-5 border  border-bege rounded-lg flex flex-col items-center ">
                 <p className="mb-5 text-lg font-bold text-center">Entrar na sua conta</p>
-                < Input label="Email" type="email" placeholder="seuemail@exemplo.com.br" />
-                < Input label="Senha" type="password" placeholder="......." />
+                < Input value={email} onChange={(e) => setEmail(e.target.value)} label="Email" type="email" placeholder="seuemail@exemplo.com.br" />
+                < Input value={senha} onChange={(e) => setSenha(e.target.value)} label="Senha" type="password" placeholder="......." />
 
                 <div className="flex justify-end w-full">
                     <button onClick={() => { setOpen(true) }} className="cursor-pointer mb-5 text-marrom hover:text-marromEscuro">Criar conta</button>

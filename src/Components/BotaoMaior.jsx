@@ -1,7 +1,7 @@
-function BotaoMaior (props) {
+function BotaoMaior ({text, onClick}) {
     return (
         <div>
-            <button className="bg-marromEscuro h-12 w-80 rounded-lg text-xl text-offwhite cursor-pointer"><span>{props.text}</span></button>
+            <button onClick={onClick} className="bg-marromEscuro h-12 w-80 rounded-lg text-xl text-offwhite cursor-pointer">{text}</button>
         </div>
     )
 }
