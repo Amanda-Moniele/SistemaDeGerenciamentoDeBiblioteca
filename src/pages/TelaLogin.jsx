@@ -3,12 +3,28 @@ import CadastroModal from "../Components/CadastroModal"
 import Input from "../Components/Input"
 import { useState } from "react"
 
-
 function TelaLogin() {
 
     const [open, setOpen] = useState(false);
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
+
+    async function Login() {
+        const resposta = await fetch("http://localhost:3000/login", {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+                email,
+                senha
+            })
+        })
+
+        const dados = await resposta.json()
+    }
 
     return (
         <div>
