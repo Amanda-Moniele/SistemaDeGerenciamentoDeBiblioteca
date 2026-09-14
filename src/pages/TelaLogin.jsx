@@ -10,17 +10,6 @@ function TelaLogin() {
     const [open, setOpen] = useState(false);
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
-    const [mostrarToast, setMostrarToast] = useState(false)
-
-    useEffect(() => {
-        if (mostrarToast) {
-            const timer = setTimeout(() => {
-                setMostrarToast(false)
-            }, 4000)
-
-            return () => clearTimeout(timer)
-        }
-    }, [mostrarToast])
 
     async function Login() {
         const resposta = await fetch("http://localhost:3000/login", {
@@ -64,12 +53,7 @@ function TelaLogin() {
             {open && (
                 <CadastroModal
                     setOpen={setOpen}
-                    setMostrarToast={setMostrarToast}
                 />
-            )}
-
-            {mostrarToast && (
-                <Toast mensagem="Conta criada com sucesso!" />
             )}
         </div>
     )

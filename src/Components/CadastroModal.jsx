@@ -3,7 +3,7 @@ import BotaoMaior from "./BotaoMaior"
 import Input from "./Input";
 import { IoClose } from "react-icons/io5";
 
-function CadastroModal({ setOpen, setMostrarToast }) {
+function CadastroModal({ setOpen}) {
 
     const [email, setEmail] = useState("")
     const [nome, setNome] = useState("")
@@ -58,10 +58,6 @@ function CadastroModal({ setOpen, setMostrarToast }) {
                 alert(dados.mensagem || "Não foi possível criar a conta.")
                 return
             }
-
-            setOpen(false)
-
-            setMostrarToast(true)
 
         } catch (error) {
             alert("Erro ao conectar com o servidor.")
