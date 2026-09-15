@@ -1,9 +1,7 @@
 import BotaoMaior from "../Components/BotaoMaior"
 import CadastroModal from "../Components/CadastroModal"
 import Input from "../Components/Input"
-import Toast from "../Components/Toast"
 import { useState } from "react"
-import { useEffect } from "react"
 
 function TelaLogin() {
 
